@@ -6,9 +6,14 @@ HASH MAPS
 
 => A key is input to a hash function to derive a hash value. The value corresponding to the key is mapped to this hash value in the hash table.
 => The hash function should be built in a way that there are fewer collisions (same hash value for multiple keys).
-=> Collisions can be resolved through linear probing (alloting next available slot leading to clustering) or separate chaining (linked list, O(n/k) better than O(n) in real world)
+=> Collisions can be resolved through linear probing (alloting next available slot leading to clustering) or separate chaining (linked list, O(n/k) better than O(n) in real world or height-balanced BST)
 => Although there are mechanisms to handle collisions, it would be best to avoid collisions in the first place. For this the hash function should be developed such that collisions do not occur frequently.
+=> Hash function depends on key range and bucket size (hash value range). Ideally hash function results in one-on-one mapping
 
 Scenarios where hash maps are useful:
 1. Spell checker
 2. Phone book
+
+Types of hash tables
+1. Hash set: Allows only non-duplicate values
+2. Hash map: Key-value pairs
