@@ -1,2 +1,2 @@
 # DSA
-DSA practice with JAVA
+DSA problems solved in JAVA
